@@ -1,0 +1,23 @@
+{
+  "name": "lanternfall",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A pick-up-and-play action roguelite for phone, desktop, and Steam Deck.",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "node scripts/smoke.mjs",
+    "icons": "node scripts/gen-icons.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  }
+}
